@@ -222,7 +222,7 @@ export class MatKeyboardKeyComponent implements OnInit {
   }
 
   private deleteSelectedText(): void {
-    const value = this.inputValue == null ? "" : this.inputValue.toString();
+    const value = this.inputValue == null ? '' : this.inputValue.toString();
     let caret = this.input ? this._getCursorPosition() : 0;
     let selectionLength = this._getSelectionLength();
     if (selectionLength === 0) {
@@ -242,7 +242,7 @@ export class MatKeyboardKeyComponent implements OnInit {
   }
 
   private replaceSelectedText(char: string): void {
-    const value = this.inputValue ? this.inputValue : "";
+    const value = this.inputValue == null ? '' : this.inputValue.toString();
     const caret = this.input ? this._getCursorPosition() : 0;
     const selectionLength = this._getSelectionLength();
     const headPart = value.slice(0, caret);
