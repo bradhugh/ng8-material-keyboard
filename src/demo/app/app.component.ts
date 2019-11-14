@@ -17,10 +17,10 @@ export class AppComponent implements OnInit, OnDestroy {
 
   private _submittedForms = new BehaviorSubject<{ control: string, value: string }[][]>([]);
 
-  @ViewChild('attachTo', { read: ElementRef })
+  @ViewChild('attachTo', { read: ElementRef, static: true })
   private _attachToElement: ElementRef;
 
-  @ViewChild('attachTo', { read: NgModel })
+  @ViewChild('attachTo', { read: NgModel, static: true })
   private _attachToControl: NgControl;
 
   get submittedForms(): Observable<{ control: string, value: string }[][]> {

@@ -1,6 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "downlevelIteration": true,
     "importHelpers": true,
     "outDir": "./dist/out-tsc",
     "baseUrl": "./",
@@ -10,7 +11,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "noUnusedParameters": false,
-    "target": "es5",
+    "target": "es2015",
     "typeRoots": [
       "node_modules/@types"
     ],
@@ -23,7 +24,7 @@
         "./src/core/src/public_api.ts"
       ]
     },
-    "module": "es2015"
+    "module": "esnext"
   },
   "angularCompilerOptions": {
     "paths": {
