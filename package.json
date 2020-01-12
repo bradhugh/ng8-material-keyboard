@@ -1,10 +1,10 @@
 {
-  "name": "ngx-material-keyboard-src",
-  "version": "0.1.2",
-  "description": "Onscreen virtual keyboard for Angular ≥ 5 (https://angular.io/) using Material 2 (https://material.angular.io/).",
+  "name": "@bradhugh/ng8-material-keyboard",
+  "version": "0.1.0",
+  "description": "Onscreen virtual keyboard for Angular 8 (https://angular.io/) using Material (https://material.angular.io/).",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ngx-material-keyboard/core.git"
+    "url": "git+https://github.com/bradhugh/ng8-material-keyboard.git"
   },
   "author": "David Enke <post@davidenke.de>",
   "license": "MIT",
@@ -46,7 +46,7 @@
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.803.19",
+    "@angular-devkit/build-angular": "^0.803.22",
     "@angular-devkit/build-ng-packagr": "^0.803.19",
     "@angular/cli": "^8.3.19",
     "@angular/compiler-cli": "8.2.14",
