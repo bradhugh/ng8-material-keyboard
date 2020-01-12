@@ -1,7 +1,7 @@
 import { Component, ElementRef, Inject, LOCALE_ID, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { FormControl, NgControl, NgForm, NgModel } from '@angular/forms';
 import { MatSlideToggleChange } from '@angular/material/slide-toggle';
-import { IKeyboardLayout, MatKeyboardComponent, MatKeyboardRef, MatKeyboardService, MAT_KEYBOARD_LAYOUTS } from '@ngx-material-keyboard/core';
+import { IKeyboardLayout, MatKeyboardComponent, MatKeyboardRef, MatKeyboardService, MAT_KEYBOARD_LAYOUTS } from '@bradhugh/ng8-material-keyboard-core';
 import { BehaviorSubject, Observable, Subscription } from 'rxjs';
 
 @Component({

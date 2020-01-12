@@ -1,6 +1,6 @@
 {
-  "name": "@bradhugh/ng8-material-keyboard",
-  "version": "0.1.0",
+  "name": "@bradhugh/ng8-material-keyboard-src",
+  "version": "0.0.0",
   "description": "Onscreen virtual keyboard for Angular 8 (https://angular.io/) using Material (https://material.angular.io/).",
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
     "start": "npm run start:demo",
     "start:demo": "ng serve --host 0.0.0.0 --disable-host-check",
     "build": "npm run build:core && npm run build:demo && npm run build:docs",
-    "build:core": "ng-packagr -p ./src/core/package.json && cpx -p README.md dist/core",
+    "build:core": "ng-packagr -p ./src/core/package.json && node ./tools/copy.js ./README.md ./dist/core/README.md",
     "build:demo": "ng build --prod --progress=false --base-href=/demo/",
     "build:docs": "compodoc ./src/core -p ./tsconfig.json --silent --disableCoverage --disablePrivateOrInternalSupport --theme readthedocs --output ./dist/docs",
     "test": "ng test",
@@ -56,7 +56,6 @@
     "@types/node": "10.12.17",
     "braces": "^2.3.2",
     "codelyzer": "^5.0.1",
-    "cpx": "1.5.0",
     "ng-packagr": "^5.4.0",
     "rxjs-tslint-rules": "4.14.0",
     "sass-lint": "1.12.1",
