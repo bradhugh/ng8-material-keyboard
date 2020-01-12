@@ -17,7 +17,7 @@
     "start": "npm run start:demo",
     "start:demo": "ng serve --host 0.0.0.0 --disable-host-check",
     "build": "npm run build:core && npm run build:demo && npm run build:docs",
-    "build:core": "ng-packagr -p ./src/core/package.json && node ./tools/copy.js ./README.md ./dist/core/README.md",
+    "build:core": "ng-packagr -p ./src/core/package.json && node ./tools/copy.js ./README.md ./dist/core/README.md && node ./tools/copy.js ./.npmrc ./dist/core/.npmrc",
     "build:demo": "ng build --prod --progress=false --base-href=/demo/",
     "build:docs": "compodoc ./src/core -p ./tsconfig.json --silent --disableCoverage --disablePrivateOrInternalSupport --theme readthedocs --output ./dist/docs",
     "test": "ng test",
